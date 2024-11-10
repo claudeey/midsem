@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Mable's Restaurant</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <span class="icon">🍴 </span>
+                <span class="brand">Mable's Restaurant</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Order</a></li>
+            </ul>
+            <a href="book.html" class="book-button">Book a Table</a>
+        </nav>
+    </header>
+    <main class="menu-section">
+        <h1>Our Menu</h1>
+    
+        <!-- Menu item with image -->
+        <div class="menu-item">
+            <img src="images/waakye.jpg" alt="Waakye" class="food-image">
+            <span class="food-name">Waakye</span>
+            <span class="price">₵20</span>
+        </div>
+        <div class="menu-item">
+            <img src="images/jollof.jpg" alt="Jollof Rice" class="food-image">
+            <span class="food-name">Jollof Rice</span>
+            <span class="price">₵25</span>
+        </div>
+        <div class="menu-item">
+            <img src="images/rice.jpg" alt="Plain Rice" class="food-image">
+            <span class="food-name">Plain Rice</span>
+            <span class="price">₵35</span>
+        </div>
+        <div class="menu-item">
+            <img src="images/banku.jpg" alt="Banku and Tilapia" class="food-image">
+            <span class="food-name">Banku and Tilapia</span>
+            <span class="price">₵35</span>
+        </div>
+        <div class="menu-item">
+            <img src="images/Fufu.jpg" alt="Fufu with Goat Meat" class="food-image">
+            <span class="food-name">Fufu with Goat Meat</span>
+            <span class="price">₵40</span>
+        </div>
+        <div class="menu-item">
+            <img src="images/yam.jpg" alt="Yam and Fish" class="food-image">
+            <span class="food-name">Yam and Fish</span>
+            <span class="price">₵25</span>
+        </div>
+    </main>
+    
+    <footer>
+        <section class="contact-info">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Please fill out the form below, and we'll get in touch as soon as possible.</p>
+        </section>
+
+        <div class="contact-form">
+            <p></p>
+            <form action="https://formspree.io/f/xvgoankz" method="POST">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <p>&copy; 2024 Mable's Restaurant. All rights reserved.</p>
+    </footer>
+</body>
+</html>

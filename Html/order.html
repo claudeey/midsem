@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order - Mable's Restaurant</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <span class="icon">🍴 </span>
+                <span class="brand">Mable's Restaurant</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Order</a></li>
+            </ul>
+            <a href="book.html" class="book-button">Book a Table</a>
+        </nav>
+    </header>
+    <main>
+        <section class="order-form">
+            <h2>Place Your Order</h2>
+            <p>Select the items you'd like to order from the menu below.</p>
+
+            <form id="orderForm" action="https://formspree.io/f/xvgoankz" method="POST">
+                <!-- Customer Details Section -->
+                <fieldset>
+                    <legend>Customer Information</legend>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="FullName" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="EmailAddress" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="PhoneNumber" required>
+                </fieldset>
+
+                <!-- Menu Items Section -->
+                <fieldset>
+                    <legend>Menu Items</legend>
+                    <label for="item1">Waakye (₵20):</label>
+                    <input type="checkbox" id="item1" name="item1" value="20">
+
+                    <label for="item2">Jollof Rice ($25:</label>
+                    <input type="checkbox" id="item2" name="item2" value="25">
+
+                    <label for="item3">Plain Rice ($35):</label>
+                    <input type="checkbox" id="item3" name="item3" value="35">
+
+                    <label for="item4">Banku and Tilapia ($35):</label>
+                    <input type="checkbox" id="item4" name="item4" value="35">
+
+                    <label for="item5">Fufu with Goat Meat ($40):</label>
+                    <input type="checkbox" id="item5" name="item5" value="40">
+
+                    <label for="item6">Yam and Fish ($25):</label>
+                    <input type="checkbox" id="item6" name="item6" value="25">
+                </fieldset>
+
+                <!-- Order Summary Section -->
+                <fieldset>
+                    <legend>Order Summary</legend>
+                    <label >Total Price: $<span id="totalPrice">0</span></label>
+                </fieldset>
+
+                <!-- Submit Section -->
+                <button type="submit" id="submitOrder">Submit Order</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <section class="contact-info">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Please fill out the form below, and we'll get in touch as soon as possible.</p>
+        </section>
+
+        <div class="contact-form">
+            <p></p>
+            <form action="https://formspree.io/f/xvgoankz" method="POST">
+                <label for="name">Full Name</label>
+                <input type="text" id="contactName" name="FullName" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="contactEmail" name="EmailAddress" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="contactMessage" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <p>&copy; 2024 Mable's Restaurant. All rights reserved.</p>
+    </footer>
+
+    <script src="order.js"></script>
+</body>
+</html>

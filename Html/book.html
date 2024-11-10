@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book a table - Mable's Restaurant</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Link to your CSS file -->
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <span class="icon">🍴 </span>
+                <span class="brand">Mable's Restaurant</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="order.html">Order</a></li>
+            </ul>
+            <a href="book.html" class="book-button">Book a Table</a>
+        </nav>
+    </header>
+
+    <!-- Booking Form Section -->
+    <section class="booking-form-section">
+        <h1>Book a Table</h1>
+        <form class="booking-form" action="https://formspree.io/f/xvgoankz" method="post">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required placeholder="Your full name">
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required placeholder="Your email address">
+
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone" required placeholder="Your phone number">
+
+            <label for="date">Booking Date</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="time">Booking Time</label>
+            <input type="time" id="time" name="time" required>
+
+            <label for="people">Number of People</label>
+            <input type="number" id="people" name="people" min="1" required placeholder="Number of people">
+
+            <label for="requests">Special Requests (Optional)</label>
+            <textarea id="requests" name="requests" rows="4" placeholder="Any special requests?"></textarea>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <section class="contact-info">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Please fill out the form below, and we'll get in touch as soon as possible.</p>
+        </section>
+
+        <div class="contact-form">
+            <p></p>
+            <form action="https://formspree.io/f/xvgoankz" method="POST">
+                <label for="name">Full Name</label>
+                <input type="text" id="contactName" name="name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="contactEmail" name="email" required>
+
+                <label for="message">Your Message</label>
+                <textarea id="message" name="contactMessage" rows="4" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <p>&copy; 2024 Mable's Restaurant. All rights reserved.</p>
+    </footer>
+</body>
+</html>
